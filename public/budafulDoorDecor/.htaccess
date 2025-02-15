@@ -1,0 +1,17 @@
+# Enable CORS
+Header set Access-Control-Allow-Origin "https://logankrieger.com"
+Header add Access-Control-Allow-Headers "origin, x-requested-with, content-type"
+Header add Access-Control-Allow-Methods "GET, POST, OPTIONS"
+
+# Allow iframe embedding
+Header set X-Frame-Options "ALLOW-FROM https://logankrieger.com"
+Header set Content-Security-Policy "frame-ancestors 'self' https://logankrieger.com https://*.logankrieger.com"
+
+# Force HTTPS
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Handle Authorization Header
+RewriteCond %{HTTP:Authorization} .
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
