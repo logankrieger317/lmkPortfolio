@@ -424,13 +424,13 @@ const Portfolio = () => {
       liveUrl: 'https://binlyfrontend-production.up.railway.app',
     },
     {
-      title: 'Contract PDF Redactor',
+      title: 'JCO ATX',
       description:
-        'A client-side PDF redaction tool with automatic PII detection, OCR support via Tesseract.js, and legally defensible redaction capabilities.',
+        'A professional website showcasing services and portfolio. Built with modern web technologies to provide an engaging user experience.',
       image: 'https://via.placeholder.com/400x300',
-      technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Tesseract.js', 'pdf-lib'],
-      githubUrl: 'https://github.com/logankrieger317/contract-pdf-redactor',
-      liveUrl: 'https://contract-pdf-redactor-production.up.railway.app',
+      technologies: ['React', 'TypeScript', 'Responsive Design', 'Modern UI/UX'],
+      githubUrl: 'https://github.com/youruser/jcoatx-website',
+      liveUrl: 'http://jcoatx.com',
     },
     {
       title: "Rabbit's Recipes",
@@ -451,13 +451,13 @@ const Portfolio = () => {
       liveUrl: 'https://aablanding-production.up.railway.app',
     },
     {
-      title: 'JCO ATX',
+      title: 'Contract PDF Redactor',
       description:
-        'A professional website showcasing services and portfolio. Built with modern web technologies to provide an engaging user experience.',
+        'A client-side PDF redaction tool with automatic PII detection, OCR support via Tesseract.js, and legally defensible redaction capabilities.',
       image: 'https://via.placeholder.com/400x300',
-      technologies: ['React', 'TypeScript', 'Responsive Design', 'Modern UI/UX'],
-      githubUrl: 'https://github.com/youruser/jcoatx-website',
-      liveUrl: 'http://jcoatx.com',
+      technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Tesseract.js', 'pdf-lib'],
+      githubUrl: 'https://github.com/logankrieger317/contract-pdf-redactor',
+      liveUrl: 'https://contract-pdf-redactor-production.up.railway.app',
     },
     {
       title: 'Courtney Lester Realty',
@@ -490,6 +490,15 @@ const Portfolio = () => {
       technologies: ['React', 'CSS', 'TypeScript', 'Responsive Design'],
       githubUrl: '#',
       liveUrl: 'https://newhiretraining-production.up.railway.app',
+    },
+    {
+      title: 'Heather Krieger Resume',
+      description:
+        'A professional online resume and portfolio site for an administrative coordinator, featuring employment history, skills, and a contact form.',
+      image: 'https://via.placeholder.com/400x300',
+      technologies: ['React', 'TypeScript', 'Responsive Design'],
+      githubUrl: 'https://github.com/logankrieger317/heather-krieger-resume',
+      liveUrl: 'https://heatherlkrieger.com',
     },
   ];
 
