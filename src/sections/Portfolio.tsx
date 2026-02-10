@@ -501,6 +501,15 @@ const Portfolio = () => {
       githubUrl: 'https://github.com/logankrieger317/heather-krieger-resume',
       liveUrl: 'https://heatherlkrieger.com',
     },
+    {
+      title: 'GarageSpace',
+      description:
+        'A marketplace demo for finding and renting garage space near you. Features property listings, search and filtering, and a clean browsing experience.',
+      image: 'https://via.placeholder.com/400x300',
+      technologies: ['React', 'TypeScript', 'Tailwind CSS', 'shadcn/ui', 'Radix UI', 'Vite'],
+      githubUrl: 'https://github.com/logankrieger317/garagespace-demo',
+      liveUrl: 'https://garagespace.up.railway.app',
+    },
   ];
 
   /** First 3 projects are spotlighted, rest go in the grid */
