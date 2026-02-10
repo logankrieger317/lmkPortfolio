@@ -201,14 +201,6 @@ const Portfolio = () => {
       liveUrl: "http://courtneylesterrealty.com",
     },
     {
-      title: "Sit and Shake",
-      description: "Marketing website for a local coffee truck business.",
-      image: "https://via.placeholder.com/400x300",
-      technologies: ["HTML", "CSS", "JavaScript", "Responsive Design"],
-      githubUrl: "#",
-      liveUrl: "http://sitandshake.logankrieger.com",
-    },
-    {
       title: "Budaful Door Decor",
       description: "E-commerce website for a local door decor business.",
       image: "https://via.placeholder.com/400x300",
@@ -231,6 +223,67 @@ const Portfolio = () => {
       technologies: ["React", "CSS", "TypeScript", "Responsive Design"],
       githubUrl: "#",
       liveUrl: "https://newhiretraining-production.up.railway.app",
+    },
+    {
+      title: "Rabbit's Recipes",
+      description:
+        "A full-stack recipe website — a private fine-home-dining menu written as a love letter. Features categorized recipes with cook times, servings, and a clean browsing experience.",
+      image: "https://via.placeholder.com/400x300",
+      technologies: [
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "Express",
+        "PostgreSQL",
+      ],
+      githubUrl: "https://github.com/logankrieger317/RabbitsRecipes",
+      liveUrl: "https://rabbitsrecipes.com",
+    },
+    {
+      title: "All American Builders",
+      description:
+        "A general contractor landing page for a Western NC construction company. Features service showcases, project galleries, testimonials, and a lead-capture estimate form.",
+      image: "https://via.placeholder.com/400x300",
+      technologies: [
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "Prisma",
+        "Turborepo",
+      ],
+      githubUrl: "https://github.com/logankrieger317/AllAmericanBuilders",
+      liveUrl: "https://aablanding-production.up.railway.app",
+    },
+    {
+      title: "Contract PDF Redactor",
+      description:
+        "A client-side PDF redaction tool with automatic PII detection, OCR support via Tesseract.js, and legally defensible redaction capabilities.",
+      image: "https://via.placeholder.com/400x300",
+      technologies: [
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "Tesseract.js",
+        "pdf-lib",
+      ],
+      githubUrl: "https://github.com/logankrieger317/contract-pdf-redactor",
+      liveUrl: "https://contract-pdf-redactor-production.up.railway.app",
+    },
+    {
+      title: "Binly",
+      description:
+        "A QR-based storage organization app for tracking household bins and items. Scan a QR code to instantly see what's inside any storage container.",
+      image: "https://via.placeholder.com/400x300",
+      technologies: [
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "Prisma",
+        "AWS S3",
+        "Turborepo",
+      ],
+      githubUrl: "https://github.com/logankrieger317/Binly",
+      liveUrl: "https://binlyfrontend-production.up.railway.app",
     },
   ];
 
