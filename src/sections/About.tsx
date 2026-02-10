@@ -132,19 +132,19 @@ const About = () => {
       title: 'Frontend Development',
       description:
         'Creating responsive and intuitive user interfaces using modern frameworks and libraries.',
-      technologies: ['React', 'TypeScript', 'Material UI', 'Tailwind CSS'],
+      technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Material UI', 'Framer Motion', 'Zustand', 'Vite', 'HTML/CSS'],
     },
     {
       icon: <CodeIcon fontSize="large" />,
       title: 'Backend Development',
       description: 'Building robust and scalable server-side applications and APIs.',
-      technologies: ['Node.js', 'Python', 'RESTful APIs', 'GraphQL'],
+      technologies: ['Node.js', 'Express', 'Python', 'RESTful APIs', 'GraphQL', 'Prisma', 'Sequelize', 'JWT Auth'],
     },
     {
       icon: <StorageIcon fontSize="large" />,
       title: 'Database & DevOps',
       description: 'Managing databases and implementing efficient deployment strategies.',
-      technologies: ['PostgreSQL', 'MongoDB', 'Docker', 'AWS'],
+      technologies: ['PostgreSQL', 'MongoDB', 'AWS S3', 'Docker', 'Railway', 'Vercel', 'Turborepo', 'Git'],
     },
   ];
 

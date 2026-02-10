@@ -460,12 +460,13 @@ const Portfolio = () => {
       liveUrl: 'https://contract-pdf-redactor-production.up.railway.app',
     },
     {
-      title: 'Courtney Lester Realty',
-      description: 'Real estate website for a local realtor.',
+      title: 'DCD Financial',
+      description:
+        'An investment mortgage brokerage website with a full CRM system. Features loan program pages, lead capture forms, and a broker dashboard for managing clients and pipelines.',
       image: 'https://via.placeholder.com/400x300',
-      technologies: ['React', 'TypeScript', 'RESTful API', 'Cloud Hosting'],
-      githubUrl: '#',
-      liveUrl: 'http://courtneylesterrealty.com',
+      technologies: ['React', 'TypeScript', 'MUI', 'Zustand', 'React Query', 'Zod'],
+      githubUrl: 'https://github.com/logankrieger317/mortgage-crm-frontend',
+      liveUrl: 'https://dcdfinancial.com',
     },
     {
       title: 'Budaful Door Decor',
