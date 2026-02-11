@@ -142,9 +142,9 @@ const About = () => {
     },
     {
       icon: <StorageIcon fontSize="large" />,
-      title: 'Database & DevOps',
-      description: 'Managing databases and implementing efficient deployment strategies.',
-      technologies: ['PostgreSQL', 'MongoDB', 'AWS S3', 'Docker', 'Railway', 'Vercel', 'Turborepo', 'Git'],
+      title: 'Data & DevOps',
+      description: 'Managing databases, building analytics pipelines, and implementing efficient deployment strategies.',
+      technologies: ['PostgreSQL', 'BigQuery', 'MongoDB', 'Looker Studio', 'AWS S3', 'Docker', 'Railway', 'Vercel', 'Git'],
     },
   ];
 
