@@ -64,9 +64,11 @@ const SectionReveal = ({
 const ProjectPreview = ({
   project,
   fullScreen = false,
+  fillContainer = false,
 }: {
   project: Project;
   fullScreen?: boolean;
+  fillContainer?: boolean;
 }) => {
   const [isIframeLoading, setIsIframeLoading] = useState(true);
   const [iframeError, setIframeError] = useState(false);
@@ -94,10 +96,11 @@ const ProjectPreview = ({
     <Box
       sx={{
         position: 'relative',
-        height: fullScreen ? '80vh' : 220,
+        height: fullScreen ? '80vh' : fillContainer ? '100%' : 220,
+        minHeight: fillContainer ? 320 : undefined,
         backgroundColor: 'rgba(255,255,255,0.03)',
         overflow: 'hidden',
-        borderRadius: fullScreen ? 0 : '12px 12px 0 0',
+        borderRadius: fullScreen ? 0 : fillContainer ? 0 : '12px 12px 0 0',
       }}
     >
       {isIframeLoading && (
@@ -119,6 +122,9 @@ const ProjectPreview = ({
         <iframe
           src={secureUrl}
           style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
             width: fullScreen ? '100%' : '200%',
             height: fullScreen ? '100%' : '200%',
             border: 'none',
@@ -241,13 +247,13 @@ const SpotlightCard = ({
         <Box
           sx={{
             flex: { xs: 'none', md: '0 0 55%' },
-            minHeight: { xs: 220, md: 320 },
+            minHeight: { xs: 240, md: 360 },
             position: 'relative',
             overflow: 'hidden',
             backgroundColor: 'rgba(255,255,255,0.03)',
           }}
         >
-          <ProjectPreview project={project} />
+          <ProjectPreview project={project} fillContainer />
         </Box>
 
         {/* Content side */}
@@ -415,13 +421,13 @@ const Portfolio = () => {
 
   const projects: Project[] = [
     {
-      title: 'Binly',
+      title: 'GarageSpace',
       description:
-        'A QR-based storage organization app for tracking household bins and items. Scan a QR code to instantly see what\'s inside any storage container.',
+        'A marketplace demo for finding and renting garage space near you. Features property listings, search and filtering, and a clean browsing experience.',
       image: 'https://via.placeholder.com/400x300',
-      technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Prisma', 'AWS S3', 'Turborepo'],
-      githubUrl: 'https://github.com/logankrieger317/Binly',
-      liveUrl: 'https://binlyfrontend-production.up.railway.app',
+      technologies: ['React', 'TypeScript', 'Tailwind CSS', 'shadcn/ui', 'Radix UI', 'Vite'],
+      githubUrl: 'https://github.com/logankrieger317/garagespace-demo',
+      liveUrl: 'https://garagespace.up.railway.app',
     },
     {
       title: 'JCO ATX',
@@ -433,13 +439,12 @@ const Portfolio = () => {
       liveUrl: 'http://jcoatx.com',
     },
     {
-      title: "Rabbit's Recipes",
+      title: 'Insurance Risk Analytics Platform',
       description:
-        'A full-stack recipe website — a private fine-home-dining menu written as a love letter. Features categorized recipes with cook times, servings, and a clean browsing experience.',
+        'A cloud-based insurance risk analytics platform processing 2M simulated claims. Features multi-layer data modeling (Bronze/Silver/Gold), aggregate-aware KPI calculations, and executive dashboards analyzing loss ratio, fraud rates, and product segmentation.',
       image: 'https://via.placeholder.com/400x300',
-      technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Express', 'PostgreSQL'],
-      githubUrl: 'https://github.com/logankrieger317/RabbitsRecipes',
-      liveUrl: 'https://rabbitsrecipes.com',
+      technologies: ['Python', 'BigQuery', 'Looker Studio', 'SQL', 'Data Engineering'],
+      liveUrl: 'https://lookerstudio.google.com/embed/reporting/c87f6b9a-460e-43bf-bc14-fff623503423/page/PgCoF',
     },
     {
       title: 'All American Builders',
@@ -502,21 +507,22 @@ const Portfolio = () => {
       liveUrl: 'https://heatherlkrieger.com',
     },
     {
-      title: 'GarageSpace',
+      title: 'Binly',
       description:
-        'A marketplace demo for finding and renting garage space near you. Features property listings, search and filtering, and a clean browsing experience.',
+        'A QR-based storage organization app for tracking household bins and items. Scan a QR code to instantly see what\'s inside any storage container.',
       image: 'https://via.placeholder.com/400x300',
-      technologies: ['React', 'TypeScript', 'Tailwind CSS', 'shadcn/ui', 'Radix UI', 'Vite'],
-      githubUrl: 'https://github.com/logankrieger317/garagespace-demo',
-      liveUrl: 'https://garagespace.up.railway.app',
+      technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Prisma', 'AWS S3', 'Turborepo'],
+      githubUrl: 'https://github.com/logankrieger317/Binly',
+      liveUrl: 'https://binlyfrontend-production.up.railway.app',
     },
     {
-      title: 'Insurance Risk Analytics Platform',
+      title: "Rabbit's Recipes",
       description:
-        'A cloud-based insurance risk analytics platform processing 2M simulated claims. Features multi-layer data modeling (Bronze/Silver/Gold), aggregate-aware KPI calculations, and executive dashboards analyzing loss ratio, fraud rates, and product segmentation.',
+        'A full-stack recipe website — a private fine-home-dining menu written as a love letter. Features categorized recipes with cook times, servings, and a clean browsing experience.',
       image: 'https://via.placeholder.com/400x300',
-      technologies: ['Python', 'BigQuery', 'Looker Studio', 'SQL', 'Data Engineering'],
-      liveUrl: 'https://lookerstudio.google.com/embed/reporting/c87f6b9a-460e-43bf-bc14-fff623503423/page/PgCoF',
+      technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Express', 'PostgreSQL'],
+      githubUrl: 'https://github.com/logankrieger317/RabbitsRecipes',
+      liveUrl: 'https://rabbitsrecipes.com',
     },
   ];
 
