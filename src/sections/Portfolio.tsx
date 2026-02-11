@@ -130,7 +130,7 @@ const ProjectPreview = ({
           onLoad={handleIframeLoad}
           onError={handleIframeError}
           title={project.title}
-          sandbox="allow-same-origin allow-scripts allow-popups allow-forms"
+          sandbox="allow-same-origin allow-scripts allow-popups allow-forms allow-popups-to-escape-sandbox allow-storage-access-by-user-activation"
           loading="lazy"
           referrerPolicy="no-referrer"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -509,6 +509,14 @@ const Portfolio = () => {
       technologies: ['React', 'TypeScript', 'Tailwind CSS', 'shadcn/ui', 'Radix UI', 'Vite'],
       githubUrl: 'https://github.com/logankrieger317/garagespace-demo',
       liveUrl: 'https://garagespace.up.railway.app',
+    },
+    {
+      title: 'Insurance Risk Analytics Platform',
+      description:
+        'A cloud-based insurance risk analytics platform processing 2M simulated claims. Features multi-layer data modeling (Bronze/Silver/Gold), aggregate-aware KPI calculations, and executive dashboards analyzing loss ratio, fraud rates, and product segmentation.',
+      image: 'https://via.placeholder.com/400x300',
+      technologies: ['Python', 'BigQuery', 'Looker Studio', 'SQL', 'Data Engineering'],
+      liveUrl: 'https://lookerstudio.google.com/embed/reporting/c87f6b9a-460e-43bf-bc14-fff623503423/page/PgCoF',
     },
   ];
 
