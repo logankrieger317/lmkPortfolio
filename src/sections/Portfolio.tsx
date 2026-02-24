@@ -421,13 +421,12 @@ const Portfolio = () => {
 
   const projects: Project[] = [
     {
-      title: 'GarageSpace',
+      title: 'Socially',
       description:
-        'A marketplace demo for finding and renting garage space near you. Features property listings, search and filtering, and a clean browsing experience.',
+        'An AI-powered social media strategy platform that generates complete 12-week content calendars with posts, images, and video scripts — ready to publish across Instagram, LinkedIn, TikTok, and more.',
       image: 'https://via.placeholder.com/400x300',
-      technologies: ['React', 'TypeScript', 'Tailwind CSS', 'shadcn/ui', 'Radix UI', 'Vite'],
-      githubUrl: 'https://github.com/logankrieger317/garagespace-demo',
-      liveUrl: 'https://garagespace.up.railway.app',
+      technologies: ['React', 'TypeScript', 'AI/ML', 'Tailwind CSS', 'SaaS'],
+      liveUrl: 'https://socially.logankrieger.com',
     },
     {
       title: 'JCO ATX',
@@ -445,6 +444,15 @@ const Portfolio = () => {
       image: 'https://via.placeholder.com/400x300',
       technologies: ['Python', 'BigQuery', 'Looker Studio', 'SQL', 'Data Engineering'],
       liveUrl: 'https://lookerstudio.google.com/embed/reporting/c87f6b9a-460e-43bf-bc14-fff623503423/page/PgCoF',
+    },
+    {
+      title: 'GarageSpace',
+      description:
+        'A marketplace demo for finding and renting garage space near you. Features property listings, search and filtering, and a clean browsing experience.',
+      image: 'https://via.placeholder.com/400x300',
+      technologies: ['React', 'TypeScript', 'Tailwind CSS', 'shadcn/ui', 'Radix UI', 'Vite'],
+      githubUrl: 'https://github.com/logankrieger317/garagespace-demo',
+      liveUrl: 'https://garagespace.up.railway.app',
     },
     {
       title: 'All American Builders',
