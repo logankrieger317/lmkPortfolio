@@ -464,6 +464,14 @@ const Portfolio = () => {
       liveUrl: 'https://aablanding-production.up.railway.app',
     },
     {
+      title: 'Wolf Hills Training Group',
+      description:
+        'A professional website for a firearms and tactical training company in Abingdon, VA. Features course listings with prerequisites, instructor profiles, student testimonials, and a contact-driven booking flow.',
+      image: 'https://via.placeholder.com/400x300',
+      technologies: ['React', 'TypeScript', 'Responsive Design', 'Modern UI/UX'],
+      liveUrl: 'https://www.wolfhillstraininggroup.com',
+    },
+    {
       title: 'Contract PDF Redactor',
       description:
         'A client-side PDF redaction tool with automatic PII detection, OCR support via Tesseract.js, and legally defensible redaction capabilities.',
